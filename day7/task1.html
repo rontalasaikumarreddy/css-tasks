@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task1.css">
+</head><style>
+.container{
+    height: 90vh;
+    width: 40vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px 10px;
+    text-align: center;
+    border: 2px solid;
+    padding: 10px;
+    background-color: rgb(255, 170, 0);
+
+}
+.container div{
+    background-color: rgb(106, 0, 255);
+    border: 2px solid red;
+    padding: 10px;
+    align-content: center;
+    color: white;
+    font-size: large;
+
+}
+.item1{
+    grid-column: 1/4;
+}
+.item5{
+    grid-row: 2/4;
+}
+.item4{
+    grid-column: 2/4;
+}
+.item10{
+    grid-column: 1/4;
+}
+</style>
+<center>
+<body>
+    <div class="container">
+        <div class="item1">Header</div>
+        <!--<div class="item2">item2</div>
+        <div class="item3">item3</div>-->
+        <div class="item4">Content-1</div>
+        <div class="item5">Sideber</div>
+       <!-- <div class="item6">item6</div>-->
+        <!--<div class="item7">item7</div>-->
+        <div class="item8">Content-2</div>
+        <div class="item9">Content-3</div>
+        <div class="item10">Footer</div>
+       <!-- <div class="item11">item11</div>
+        <div class="item12">item12</div>-->
+    </div>
+</body></center>
+</html>

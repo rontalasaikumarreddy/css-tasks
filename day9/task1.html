@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .main {
+        display: flex;
+        justify-content: center;
+         }
+ .b1{
+    background-color: aqua;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+    animation: bounce  infinite;
+        animation-duration: 2s;
+        
+        /* animation-direction: alternate;
+        animation-iteration-count: infinite;
+    animation-timing-function: ease-in; */
+ }
+ .b2{
+    background-color: aqua;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+    animation: bounce  infinite;
+        animation-duration: 3s;
+        
+        /* animation-direction: alternate;
+        animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; */
+ }
+ .b3{background-color: aqua;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+    animation: bounce  infinite;
+        animation-duration: 4s;
+        
+        /* animation-direction: alternate;
+        animation-iteration-count: infinite;
+    animation-timing-function: ease-out; */
+ }
+ @keyframes bounce{
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(0px,200px);
+
+    }
+    100%{
+        transform: translate(0px);
+    }
+
+ }
+ .second{
+     display: flex;
+    padding-top:210px;
+     justify-content: center;
+     column-gap: 5px;
+    animation-duration: 2s;
+        
+ }
+ .b4{
+    width: 1%;
+    height: 20px;
+border-radius: 50%;   
+background-color:red;
+ animation:change 1s infinite;
+ animation-duration: 0.5s;
+ }
+ .b5{
+    width: 1%;
+    height: 20px;
+border-radius: 70%;   
+background-color:red;
+ animation:change 1s infinite;
+ animation-duration: 0.7s;
+    
+
+ }
+ .b6{
+    width: 1%;
+    height: 20px;
+border-radius: 70%;   
+background-color:red;
+ animation:change 1s infinite;
+ animation-duration: 1s;
+    
+ }
+ 
+   @keyframes change { 
+
+    0%{
+    transform: scale(1,1);
+    background-color: blue;
+     }
+    50%{
+    
+        transform: scale(1,1);
+        background-color: blue;
+        }
+        0%{
+            transform: scale(1.1);
+            background-color: blue;
+        }
+
+ }
+ 
+    
+    </style>
+<body><div class="main">
+    <div class="b1"></div>
+    <div class="b2" ></div>
+    <div class="b3"></div>
+    </div>
+    <div class="second">
+        <div class="b4"></div>
+        <div class="b5" ></div>
+        <div class="b6"></div>
+        </div>
+        
+    </body>
+</html>
